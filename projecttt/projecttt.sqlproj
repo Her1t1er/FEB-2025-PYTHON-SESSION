@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.2.5-preview" />
+  <PropertyGroup>
+    <Name>projecttt</Name>
+    <ProjectGuid>{625DB17F-FA26-4639-9889-D210560E3C5D}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>
